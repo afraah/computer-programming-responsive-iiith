@@ -233,9 +233,9 @@ window.view = {
  		//this.getCanvas();
  		this.canvasContext.beginPath();
  		this.canvasContext.fillStyle = '#C2D995';
- 		this.canvasContext.fillRect (75, 75, 200, 250);
+ 		this.canvasContext.fillRect (50, 50, 200, 250);
  		this.canvasContext.strokeStyle = '#000000';
- 		this.canvasContext.rect(75, 75, 200, 250);
+ 		this.canvasContext.rect(50, 50, 200, 250);
  		this.canvasContext.stroke();	
  	},
  	// drawCircle: draws circle on canvasContext according given x and y coordinates.
@@ -264,12 +264,12 @@ window.view = {
     		this.drawFillRectangle();
     		this.drawCircle(50, 50, '#000000');
 		this.drawCircle(250, 50, '#000000');
-		this.drawCircle(50, 300, '#000000');
 		this.drawCircle(250, 300, '#000000');
-		this.displayText('(x1, y1)', 40, 40); 
-		this.displayText('(x2, y2)', 240, 40);
-		this.displayText('(x3, y3)', 240, 320);
-		this.displayText('(x4, y4)', 50, 320);
+		this.drawCircle(50, 300, '#000000');
+		this.displayText('(x1, y1)', 50, 50); 
+		this.displayText('(x2, y2)', 250, 50);
+		this.displayText('(x3, y3)', 250, 300);
+		this.displayText('(x4, y4)', 50, 300);
 		this.canvasContext.save();
     	},
 	/* validationInput: check validation of input that is given by user and if input value is valid 
