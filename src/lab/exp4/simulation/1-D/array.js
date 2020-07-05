@@ -169,7 +169,7 @@ window.view = {
 		else
 			alert('number of inputs must be equal to the size of the array')	
 	},
-	setKey: function() {
+	setKey: function() { 
 		var element = document.getElementById('sortingDiv').childNodes
 		document.getElementById('key').innerHTML = element[this.i].firstChild.innerHTML
 		var elements = document.getElementById('sortingDiv').childNodes

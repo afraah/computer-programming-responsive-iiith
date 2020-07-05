@@ -177,14 +177,14 @@ window.view = {
 				d = options4[i].value
 			options4[i].checked = false
 		}
-		if ( a !== '2')
-			alert('Incorrect value of input variables(arguments). Calculating the area of a rectangle requires the length of the two different parallel sides of the rectangle. Try again.')
+		if ( a !== '2') //CHANGES MADE
+			alert('Incorrect value of input variables(arguments). Calculating the area of a right angle triangle requires the length of the two different  side of the right angle triangle. Try again.')
 		else if ( b !== 'float' )
-			alert('Incorrect datatype of input variables(arguments). The value of the sides of a rectangle need not be integers. Try again.')
+			alert('Incorrect datatype of input variables(arguments). The value of the sides of a right angletriangle need not be integers. Try again.')
 		else if ( c !== 'float' )
-			alert('Incorrect datatype for return type. The value of the area of a rectangle need not be an integer. Try again.')
+			alert('Incorrect datatype for return type. The value of the area of a right angle triangle need not be an integer. Try again.')
 		else if ( d !== 'a*b' )
-			alert('Incorrect formula for calculating the area of a rectangle. Try again.')
+			alert('Incorrect formula for calculating the area of a right angle triangle. Try again.')
 		else
 			this.approveRectangleInputs()
 	},
@@ -268,7 +268,7 @@ window.view = {
 		document.getElementById('functionSquare').innerHTML += 'float area_sq (float a)<br>{<br> &emsp; float area = a*a;<br>&emsp; return area;<br>}'
 	},
 	displayFunctionForRectangle: function() {
-		document.getElementById('functionRectangle').innerHTML += 'float area_rect (float a,float b)<br>{<br> &emsp; float area = a*b;<br> &emsp; return area;<br>}'
+		document.getElementById('functionRectangle').innerHTML += 'float area_rightangletriangle (float a,float b)<br>{<br> &emsp; float area = 0.5*a*b;<br> &emsp; return area;<br>}'
 	},
 	displayFunctionForTriangle: function() {
 		document.getElementById('functionTriangle').innerHTML += 'float area_triangle (float a)<br>{<br>&emsp;float area = (sqrt(3)/4.0)*a*a;<br>&emsp;return area;<br>}'
